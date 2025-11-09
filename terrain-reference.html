@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrain Sprite Sheets Reference</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #4ec9b0;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #ce9178;
+            margin-top: 40px;
+        }
+        .sprite-sheet {
+            background: #2d2d30;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #3e3e42;
+        }
+        .sprite-sheet img {
+            max-width: 100%;
+            image-rendering: pixelated;
+            background: repeating-conic-gradient(#2d2d30 0% 25%, #252526 0% 50%) 50% / 20px 20px;
+            border: 1px solid #007acc;
+        }
+        .info {
+            background: #252526;
+            padding: 15px;
+            border-left: 3px solid #007acc;
+            margin: 20px 0;
+        }
+        .note {
+            background: #3c2f00;
+            border-left: 3px solid #ce9178;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        a {
+            color: #4ec9b0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #1e1e1e;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #ce9178;
+        }
+    </style>
+</head>
+<body>
+    <h1>🗺️ Terrain & Ground Sprite Sheets Reference</h1>
+
+    <div class="info">
+        <strong>📖 What is this?</strong><br>
+        This page shows you all the available terrain sprite sheets from vale-village. These contain ground tiles, roads, paths, and outdoor terrain elements that you can extract and use in your mockup builder.
+    </div>
+
+    <div class="note">
+        <strong>💡 How to use terrain tiles:</strong><br>
+        Currently these are sprite sheets (PNG files with multiple tiles). To use individual tiles:
+        <ol>
+            <li>Open the sprite sheet in an image editor</li>
+            <li>Extract individual 16x16 or 32x32 tiles you want</li>
+            <li>Save them to <code>assets/terrain/</code></li>
+            <li>Run <code>node scripts/generate-sprite-list.js</code></li>
+            <li>Reload the app to see your new terrain tiles!</li>
+        </ol>
+    </div>
+
+    <h2>🌳 Outdoor Terrain Sprite Sheet</h2>
+    <div class="sprite-sheet">
+        <p><strong>File:</strong> 12-terrain-outdoor.png</p>
+        <p><strong>Contains:</strong> 144 outdoor terrain sprites including:</p>
+        <ul>
+            <li>Paths and roads</li>
+            <li>Dirt, grass, stone ground tiles</li>
+            <li>Water edges and shores</li>
+            <li>Fences and barriers</li>
+            <li>Signs and posts</li>
+            <li>Rock formations</li>
+        </ul>
+        <img src="/assets/sprite-sheets/12-terrain-outdoor.png" alt="Outdoor Terrain Sprite Sheet">
+    </div>
+
+    <h2>🏠 Indoor Terrain Sprite Sheet</h2>
+    <div class="sprite-sheet">
+        <p><strong>File:</strong> 13-terrain-indoor.png</p>
+        <p><strong>Contains:</strong> 241 indoor terrain sprites including:</p>
+        <ul>
+            <li>Floor tiles (wood, stone, carpet)</li>
+            <li>Wall sections</li>
+            <li>Doorways and entrances</li>
+            <li>Stairs and railings</li>
+            <li>Windows</li>
+            <li>Interior decorations</li>
+        </ul>
+        <img src="/assets/sprite-sheets/13-terrain-indoor.png" alt="Indoor Terrain Sprite Sheet">
+    </div>
+
+    <h2>🏛️ Buildings Sprite Sheet</h2>
+    <div class="sprite-sheet">
+        <p><strong>File:</strong> 09-buildings-all.png</p>
+        <p><strong>Contains:</strong> 130 building sprites from all towns</p>
+        <p>These are already imported as individual sprites in your mockup builder!</p>
+        <img src="/assets/sprite-sheets/09-buildings-all.png" alt="Buildings Sprite Sheet">
+    </div>
+
+    <h2>🌲 Plants & Trees Sprite Sheet</h2>
+    <div class="sprite-sheet">
+        <p><strong>File:</strong> 10-plants-trees.png</p>
+        <p><strong>Contains:</strong> 47 plant and tree sprites</p>
+        <p>These are already imported as individual sprites in your mockup builder!</p>
+        <img src="/assets/sprite-sheets/10-plants-trees.png" alt="Plants & Trees Sprite Sheet">
+    </div>
+
+    <div class="info">
+        <strong>📂 Sprite Sheet Location:</strong><br>
+        All sprite sheets are in <code>assets/sprite-sheets/</code><br>
+        <br>
+        <strong>🔗 Quick Links:</strong><br>
+        <a href="/">← Back to Mockup Builder</a>
+    </div>
+
+    <h2>🎨 Next Steps</h2>
+    <div class="note">
+        <p>Your mockup builder now has <strong>543 individual sprites</strong> loaded!</p>
+        <p><strong>Current sprite count:</strong></p>
+        <ul>
+            <li>🏛️ Buildings: 79 (from 14 different towns)</li>
+            <li>🌳 Plants: 47 (trees, bushes, cacti, flowers)</li>
+            <li>🪑 Furniture: 103 (beds, tables, chairs, bookcases, etc.)</li>
+            <li>🛤️ Infrastructure: 143 (wells, signs, fences, bridges, etc.)</li>
+            <li>🗿 Statues: 27 (elemental statues, monuments)</li>
+            <li>📦 Decorations: 144 (barrels, chests, boxes, etc.)</li>
+        </ul>
+        <p>To add terrain tiles, you'll need to extract individual tiles from the sprite sheets above and add them to the assets!</p>
+    </div>
+</body>
+</html>

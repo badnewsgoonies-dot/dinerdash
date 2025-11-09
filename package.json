@@ -1,0 +1,24 @@
+{
+  "name": "dinerdash-mockup-builder",
+  "version": "1.0.0",
+  "description": "Visual mockup builder for designing city layouts using vale-village sprites",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "game",
+    "mockup",
+    "builder",
+    "canvas"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "canvas": "^3.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  }
+}

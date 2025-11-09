@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinerDash - City Mockup Builder</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>DinerDash City Mockup Builder</h1>
+            <div class="toolbar">
+                <button id="clearBtn" title="Clear Canvas">Clear</button>
+                <button id="exportPngBtn" title="Export as PNG">Export PNG</button>
+                <button id="exportJsonBtn" title="Export Layout">Save Layout</button>
+                <button id="importJsonBtn" title="Import Layout">Load Layout</button>
+                <input type="file" id="importJsonInput" accept=".json" style="display: none;">
+                <label>
+                    <input type="checkbox" id="gridToggle" checked>
+                    Show Grid
+                </label>
+                <label>
+                    Zoom: <span id="zoomLevel">100%</span>
+                </label>
+            </div>
+        </header>
+
+        <div class="container">
+            <aside id="sidebar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search sprites...">
+                </div>
+
+                <div class="categories">
+                    <div class="category-button" data-category="buildings">
+                        <span class="category-icon">🏛️</span>
+                        <span>Buildings</span>
+                    </div>
+
+                    <div class="category-button" data-category="plants">
+                        <span class="category-icon">🌳</span>
+                        <span>Plants & Trees</span>
+                    </div>
+
+                    <div class="category-button" data-category="furniture">
+                        <span class="category-icon">🪑</span>
+                        <span>Furniture</span>
+                    </div>
+
+                    <div class="category-button" data-category="infrastructure">
+                        <span class="category-icon">🛤️</span>
+                        <span>Infrastructure</span>
+                    </div>
+
+                    <div class="category-button" data-category="statues">
+                        <span class="category-icon">🗿</span>
+                        <span>Statues & Monuments</span>
+                    </div>
+
+                    <div class="category-button" data-category="decorations">
+                        <span class="category-icon">📦</span>
+                        <span>Decorations</span>
+                    </div>
+
+                    <div class="category-button" data-category="terrain">
+                        <span class="category-icon">🗺️</span>
+                        <span>Terrain & Ground</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Flyout Panel -->
+            <div id="flyoutPanel" class="flyout-panel">
+                <div class="flyout-header">
+                    <h2 id="flyoutTitle">Category</h2>
+                    <button id="closeFlyout" class="close-btn">✕</button>
+                </div>
+                <div class="flyout-subcategories" id="flyoutSubcategories"></div>
+                <div class="flyout-content" id="flyoutContent"></div>
+            </div>
+
+            <main id="canvas-container">
+                <canvas id="mockupCanvas" width="1920" height="1080"></canvas>
+                <div id="statusBar">
+                    <span id="mouseCoords">X: 0, Y: 0</span>
+                    <span id="selectedInfo"></span>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
