@@ -6,7 +6,12 @@
       "Bash(node scripts/generate-sprite-list.js:*)",
       "Bash(npm install:*)",
       "Bash(node scripts/extract-terrain-tiles.js:*)",
-      "Bash(node scripts/curate-terrain-tiles.js:*)"
+      "Bash(node scripts/curate-terrain-tiles.js:*)",
+      "WebFetch(domain:code.claude.com)",
+      "Bash(dir \"C:\\Dev\\AiGames\")",
+      "Bash(cat:*)",
+      "Bash(claude model --help:*)",
+      "Bash(claude setup-token:*)"
     ],
     "deny": [],
     "ask": []
