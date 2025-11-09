@@ -61,7 +61,7 @@ export const SUBCATEGORIES: SubcategoryConfig = {
         'Other Decorations': (name) => !name.toLowerCase().match(/(barrel|box|crate|chest|jar|bottle|potion|stone|boulder|rock|stump)/),
     },
     terrain: {
-        'Outdoor Terrain': (name) => name.toLowerCase().includes('outdoor'),
-        'Indoor Terrain': (name) => name.toLowerCase().includes('indoor'),
+        'Indoor': (name) => name.toLowerCase().includes('indoor'),
+        'Outdoor': (name) => name.toLowerCase().includes('outdoor'),
     }
 };

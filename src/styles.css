@@ -60,6 +60,25 @@ header h1 {
     gap: 5px;
 }
 
+.toolbar select {
+    background: #3c3c3c;
+    color: #cccccc;
+    border: 1px solid #3e3e42;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.toolbar select:focus {
+    outline: none;
+    border-color: #007acc;
+}
+
+.toolbar select:hover {
+    border-color: #007acc;
+}
+
 #zoomLevel {
     color: #4ec9b0;
     font-weight: 600;
@@ -272,7 +291,13 @@ header h1 {
 }
 
 .sprite-item:active {
-    cursor: grabbing;
+    cursor: pointer;
+}
+
+.sprite-item.brush-selected {
+    border-color: #00ff00;
+    background: #1e4d1e;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
 .sprite-item img {

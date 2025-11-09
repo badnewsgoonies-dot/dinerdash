@@ -182,7 +182,13 @@ export class UIController {
     }
 
     private setupToolbarButtons() {
-        // Clear button
+        // Clear brush button
+        document.getElementById('clearBrushBtn')?.addEventListener('click', () => {
+            this.canvasManager.clearBrush();
+            document.querySelectorAll('.sprite-item').forEach(el => el.classList.remove('brush-selected'));
+        });
+
+        // Clear canvas button
         document.getElementById('clearBtn')?.addEventListener('click', () => {
             if (confirm('Are you sure you want to clear the canvas?')) {
                 this.canvasManager.clearCanvas();
@@ -234,6 +240,27 @@ export class UIController {
         document.getElementById('gridToggle')?.addEventListener('change', (e) => {
             this.canvasManager.toggleGrid();
         });
+
+        // Canvas size selector
+        document.getElementById('canvasSizeSelect')?.addEventListener('change', (e) => {
+            const value = (e.target as HTMLSelectElement).value;
+
+            if (value === 'custom') {
+                const width = prompt('Enter canvas width:', '800');
+                const height = prompt('Enter canvas height:', '600');
+
+                if (width && height) {
+                    const w = parseInt(width);
+                    const h = parseInt(height);
+                    if (!isNaN(w) && !isNaN(h) && w > 0 && h > 0) {
+                        this.canvasManager.setCanvasSize(w, h);
+                    }
+                }
+            } else {
+                const [width, height] = value.split(',').map(Number);
+                this.canvasManager.setCanvasSize(width, height);
+            }
+        });
     }
 
     private setupSearch() {
@@ -246,6 +273,13 @@ export class UIController {
 
     private setupKeyboardShortcuts() {
         document.addEventListener('keydown', (e) => {
+            // ESC key - clear brush
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                this.canvasManager.clearBrush();
+                document.querySelectorAll('.sprite-item').forEach(el => el.classList.remove('brush-selected'));
+            }
+
             // Delete key - remove selected sprite
             if (e.key === 'Delete' || e.key === 'Backspace') {
                 if (document.activeElement?.tagName !== 'INPUT') {
@@ -272,7 +306,6 @@ export class UIController {
     private createSpriteItem(sprite: any): HTMLElement {
         const item = document.createElement('div');
         item.className = 'sprite-item';
-        item.draggable = true;
         item.dataset.spriteId = sprite.id;
 
         const img = document.createElement('img');
@@ -286,18 +319,12 @@ export class UIController {
         item.appendChild(img);
         item.appendChild(name);
 
-        // Drag start
-        item.addEventListener('dragstart', (e) => {
-            const dataTransfer = (e as DragEvent).dataTransfer;
-            if (dataTransfer) {
-                dataTransfer.effectAllowed = 'copy';
-                dataTransfer.setData('spriteId', sprite.id);
-            }
-        });
-
-        // Also support click to add to center
-        item.addEventListener('dblclick', () => {
-            this.addSpriteToCanvas(sprite, { x: 400, y: 300 });
+        // Click to set as brush (attach to cursor)
+        item.addEventListener('click', () => {
+            this.canvasManager.setBrushSprite(sprite);
+            // Visual feedback - highlight selected sprite
+            document.querySelectorAll('.sprite-item').forEach(el => el.classList.remove('brush-selected'));
+            item.classList.add('brush-selected');
         });
 
         return item;

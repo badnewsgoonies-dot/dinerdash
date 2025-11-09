@@ -11,7 +11,19 @@
         <header>
             <h1>DinerDash City Mockup Builder</h1>
             <div class="toolbar">
-                <button id="clearBtn" title="Clear Canvas">Clear</button>
+                <button id="clearBrushBtn" title="Clear Brush (ESC)">Clear Brush</button>
+                <button id="clearBtn" title="Clear Canvas">Clear Canvas</button>
+                <label>
+                    Canvas Size:
+                    <select id="canvasSizeSelect">
+                        <option value="640,480">640×480 (Small)</option>
+                        <option value="800,600">800×600 (Medium)</option>
+                        <option value="1024,768">1024×768 (Large)</option>
+                        <option value="1280,720">1280×720 (HD)</option>
+                        <option value="1920,1080" selected>1920×1080 (Full HD)</option>
+                        <option value="custom">Custom...</option>
+                    </select>
+                </label>
                 <button id="exportPngBtn" title="Export as PNG">Export PNG</button>
                 <button id="exportJsonBtn" title="Export Layout">Save Layout</button>
                 <button id="importJsonBtn" title="Import Layout">Load Layout</button>
