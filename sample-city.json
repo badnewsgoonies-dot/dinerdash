@@ -1,0 +1,329 @@
+{
+  "version": "1.0",
+  "sprites": [
+    {
+      "spriteId": "buildings-Vale Inn",
+      "x": 400,
+      "y": 200,
+      "width": 96,
+      "height": 96,
+      "rotation": 0,
+      "zIndex": 1
+    },
+    {
+      "spriteId": "buildings-Vale Shop",
+      "x": 520,
+      "y": 200,
+      "width": 96,
+      "height": 96,
+      "rotation": 0,
+      "zIndex": 2
+    },
+    {
+      "spriteId": "buildings-Vale House 1",
+      "x": 300,
+      "y": 200,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 3
+    },
+    {
+      "spriteId": "buildings-Vale House 2",
+      "x": 640,
+      "y": 200,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 4
+    },
+    {
+      "spriteId": "buildings-Garets House",
+      "x": 300,
+      "y": 300,
+      "width": 80,
+      "height": 80,
+      "rotation": 0,
+      "zIndex": 5
+    },
+    {
+      "spriteId": "buildings-Vale Sanctum",
+      "x": 450,
+      "y": 80,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "zIndex": 6
+    },
+    {
+      "spriteId": "buildings-Bilibin House 1",
+      "x": 750,
+      "y": 200,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 7
+    },
+    {
+      "spriteId": "buildings-Bilibin Inn",
+      "x": 850,
+      "y": 200,
+      "width": 96,
+      "height": 96,
+      "rotation": 0,
+      "zIndex": 8
+    },
+    {
+      "spriteId": "buildings-Xian Dojo",
+      "x": 750,
+      "y": 320,
+      "width": 112,
+      "height": 96,
+      "rotation": 0,
+      "zIndex": 9
+    },
+    {
+      "spriteId": "buildings-Contigo Tent",
+      "x": 200,
+      "y": 350,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 10
+    },
+    {
+      "spriteId": "plants-Tree",
+      "x": 250,
+      "y": 150,
+      "width": 48,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 11
+    },
+    {
+      "spriteId": "plants-Tree 1",
+      "x": 700,
+      "y": 150,
+      "width": 48,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 12
+    },
+    {
+      "spriteId": "plants-Tree 2",
+      "x": 600,
+      "y": 90,
+      "width": 48,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 13
+    },
+    {
+      "spriteId": "plants-Palm Tree",
+      "x": 950,
+      "y": 250,
+      "width": 48,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 14
+    },
+    {
+      "spriteId": "plants-Bush",
+      "x": 380,
+      "y": 170,
+      "width": 32,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 15
+    },
+    {
+      "spriteId": "plants-Bush 2",
+      "x": 620,
+      "y": 170,
+      "width": 32,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 16
+    },
+    {
+      "spriteId": "plants-Flowers",
+      "x": 480,
+      "y": 220,
+      "width": 32,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 17
+    },
+    {
+      "spriteId": "plants-Shrub",
+      "x": 280,
+      "y": 280,
+      "width": 32,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 18
+    },
+    {
+      "spriteId": "infrastructure-Well",
+      "x": 500,
+      "y": 350,
+      "width": 48,
+      "height": 48,
+      "rotation": 0,
+      "zIndex": 19
+    },
+    {
+      "spriteId": "infrastructure-Sign",
+      "x": 350,
+      "y": 180,
+      "width": 24,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 20
+    },
+    {
+      "spriteId": "infrastructure-Sign 2",
+      "x": 560,
+      "y": 180,
+      "width": 24,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 21
+    },
+    {
+      "spriteId": "infrastructure-Torch",
+      "x": 420,
+      "y": 210,
+      "width": 16,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 22
+    },
+    {
+      "spriteId": "infrastructure-Torch",
+      "x": 540,
+      "y": 210,
+      "width": 16,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 23
+    },
+    {
+      "spriteId": "infrastructure-Fence Horizontal",
+      "x": 200,
+      "y": 420,
+      "width": 32,
+      "height": 16,
+      "rotation": 0,
+      "zIndex": 24
+    },
+    {
+      "spriteId": "infrastructure-Fence Horizontal",
+      "x": 232,
+      "y": 420,
+      "width": 32,
+      "height": 16,
+      "rotation": 0,
+      "zIndex": 25
+    },
+    {
+      "spriteId": "infrastructure-Fence Horizontal",
+      "x": 264,
+      "y": 420,
+      "width": 32,
+      "height": 16,
+      "rotation": 0,
+      "zIndex": 26
+    },
+    {
+      "spriteId": "infrastructure-Fence Horizontal",
+      "x": 296,
+      "y": 420,
+      "width": 32,
+      "height": 16,
+      "rotation": 0,
+      "zIndex": 27
+    },
+    {
+      "spriteId": "statues-Venus Statue",
+      "x": 480,
+      "y": 50,
+      "width": 64,
+      "height": 80,
+      "rotation": 0,
+      "zIndex": 28
+    },
+    {
+      "spriteId": "statues-Dragon",
+      "x": 900,
+      "y": 320,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "zIndex": 29
+    },
+    {
+      "spriteId": "decorations-Barrel",
+      "x": 390,
+      "y": 240,
+      "width": 24,
+      "height": 24,
+      "rotation": 0,
+      "zIndex": 30
+    },
+    {
+      "spriteId": "decorations-Barrel",
+      "x": 510,
+      "y": 240,
+      "width": 24,
+      "height": 24,
+      "rotation": 0,
+      "zIndex": 31
+    },
+    {
+      "spriteId": "decorations-Chest",
+      "x": 550,
+      "y": 240,
+      "width": 32,
+      "height": 24,
+      "rotation": 0,
+      "zIndex": 32
+    },
+    {
+      "spriteId": "decorations-Box",
+      "x": 370,
+      "y": 240,
+      "width": 24,
+      "height": 24,
+      "rotation": 0,
+      "zIndex": 33
+    },
+    {
+      "spriteId": "decorations-Stone",
+      "x": 320,
+      "y": 120,
+      "width": 24,
+      "height": 24,
+      "rotation": 0,
+      "zIndex": 34
+    },
+    {
+      "spriteId": "decorations-Stone",
+      "x": 680,
+      "y": 120,
+      "width": 24,
+      "height": 24,
+      "rotation": 0,
+      "zIndex": 35
+    },
+    {
+      "spriteId": "decorations-Stump",
+      "x": 220,
+      "y": 200,
+      "width": 32,
+      "height": 32,
+      "rotation": 0,
+      "zIndex": 36
+    }
+  ]
+}
